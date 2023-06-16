@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Basic | Javascript DOM</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript">
+        // Seleksi element div dengan id app 'app'
+        const app = document.getElementById('app');
+
+        // Buat element h1 baru
+        const header = document.createElement('h1');
+
+        // Buat text node untuk element h1
+        const headerContent = document.createTextNode('Ini adalah cara javascript memanipulasi DOM 🔥');
+
+        // Append teks ke dalam h1
+        header.appendChild(headerContent);
+
+        // Simpan element h1 di dalam div
+        app.appendChild(header);
+    </script>
+</body>
+</html>
